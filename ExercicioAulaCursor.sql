@@ -30,23 +30,23 @@ FOREIGN KEY(codigo_curso) REFERENCES curso(codigo)
 )
 GO
 INSERT INTO curso VALUES
-(48, 'An·lise e Desenvolvimento de Sistemas', 2880),
-(51, 'LogÌstica', 2880),
-(67, 'PolÌmeros', 2880),
-(73, 'ComÈrcio Exterior', 2600),
-(94, 'Gest„o Empresarial', 2600)
+(48, 'An√°lise e Desenvolvimento de Sistemas', 2880),
+(51, 'Log√≠stica', 2880),
+(67, 'Pol√≠meros', 2880),
+(73, 'Com√©rcio Exterior', 2600),
+(94, 'Gest√£o Empresarial', 2600)
 GO
 INSERT INTO disciplina VALUES
 ('ALG001', 'Algoritmos', 80),
-('ADM001', 'AdministraÁ„o', 80),
-('LHW010', 'LaboratÛrio de Hardware', 40),
+('ADM001', 'Administra√ß√£o', 80),
+('LHW010', 'Laborat√≥rio de Hardware', 40),
 ('LPO001', 'Pesquisa Operacional', 80),
-('FIS003', 'FÌsica I', 80),
-('FIS007', 'Fisico QuÌmica', 80),
-('CMX001', 'ComÈrcio Exterior', 80),
+('FIS003', 'F√≠sica I', 80),
+('FIS007', 'Fisico Qu√≠mica', 80),
+('CMX001', 'Com√©rcio Exterior', 80),
 ('MKT002', 'Fundamentos de Marketing', 80),
-('INF001', 'Inform·tica', 40),
-('ASI001', 'Sistemas de InformaÁ„o', 80)
+('INF001', 'Inform√°tica', 40),
+('ASI001', 'Sistemas de Informa√ß√£o', 80)
 GO
 INSERT INTO disciplina_curso VALUES
 ('ALG001', 48),
@@ -104,5 +104,3 @@ BEGIN
 	RETURN
 END
 GO
-
-SELECT * FROM dbo.fn_cursodisciplinas(94)
